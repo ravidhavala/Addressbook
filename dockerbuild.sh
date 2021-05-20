@@ -9,5 +9,5 @@ ADD addressbook.war /usr/local/tomcat/webapps
 CMD "catalina.sh" "run"
 EOF
 
-sudo docker bulid . -t ravidhavala/addressbook:$BUILD_NUMBER
+sudo docker build . -t ravidhavala/addressbook:$BUILD_NUMBER
 sudo docker push ravidhavala/addressbook:$BUILD_NUMBER
