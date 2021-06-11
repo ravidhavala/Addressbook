@@ -1,5 +1,6 @@
 rm -rf docker-jenkins-build
 mkdir docker-jenkins-build
+
 cd docker-jenkins-build
 cp /var/lib/jenkins/workspace/ApplicationPackage/target/addressbook.war .
 cat << 'EOF' > dockerfile
